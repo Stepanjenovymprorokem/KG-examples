@@ -12,11 +12,11 @@ package third;
 public class SecondTaskSet {
 
     public static void main(String[] args) {
-        int n=8;
-         int sum = 0;
-        int counter = 1;
-        while (counter <= n) {
-           counter = counter + 1;
+        int n=10;
+        
+        int a = 1;
+        while (a <= n) {
+           a = a + 1;
             
         System.out.println("ahoj");
         }
@@ -126,20 +126,52 @@ public class SecondTaskSet {
     //pro 3 vrací 9
     //pro 4 vrací 16
     public static int NpowerOfTwo(int n) {
-       int 
-        return n;
+       int a = 0;
+       int b = 1;
+       
+       if (n == 0)  {
+       
+         return b;
+           }
+       while (a < n)  {
+           a = a+1;
+           b = b*2;
+           }
+        return b;
     }
 // vrátí faktoriál
     // btw 0!=1
 
     public static int factorial(int n) {
+    
+    int b = n-1;
         
-//    if (n == 0) {
+    
+    if (n == 0) {
     return 1;
-//    }
+    }
+
+    while (b > 0) {
+    n = b*n;
+    b = b-1;
+    }
+    return  0;
+    }
+
+
+
+
+
+
 //    n!
     
-    }
+    
+    
+    
+    
+    
+    
+    
     private static void playBeziLiskaKTaboru() {
         System.out.println("Skladba běží liška k táboru");
         SoundUtils soundUtils = new SoundUtils();
